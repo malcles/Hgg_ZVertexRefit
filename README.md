@@ -12,11 +12,17 @@ For regular users:
 - install the code
 
 cmsrel CMSSW_9_2_8
+
 cd CMSSW_9_2_8/src
+
 cmsenv
+
 git cms-init
-cd $CMSSW_BASE/src  
+
+cd $CMSSW_BASE/src
+  
 git clone https://github.com/malcles/Hgg_ZVertexRefit Validation/Hgg_ZVertexRefit
+
 
 - compile
 
