@@ -47,7 +47,7 @@ process.configurationMetadata = cms.untracked.PSet(
 
 #added JM: beg
 
-from Validation.RecoVertex.myNoMuonTrackProducer_cfi import *
+from Validation.Hgg_ZVertexRefit.myNoMuonTrackProducer_cfi import *
 process.myNoMuonTrackProducerNoMu=myNoMuonTrackProducer.clone()
 process.myNoMuonTrackProducerNoMu.doRemoveMuons=cms.untracked.bool(True)
 process.myNoMuonTrackProducerNoMu.verbose=cms.untracked.bool(True)
@@ -58,7 +58,7 @@ process.offlinePrimaryVerticesNoMu=offlinePrimaryVertices.clone()
 process.offlinePrimaryVerticesNoMu.TrackLabel = cms.InputTag("myNoMuonTrackProducerNoMu")
 
 
-from Validation.RecoVertex.myNoMuonTrackProducer_cfi import *
+from Validation.Hgg_ZVertexRefit.myNoMuonTrackProducer_cfi import *
 process.myNoMuonTrackProducerWithMu=myNoMuonTrackProducer.clone()
 process.myNoMuonTrackProducerWithMu.doRemoveMuons=cms.untracked.bool(False)
 process.myNoMuonTrackProducerWithMu.verbose=cms.untracked.bool(False)
